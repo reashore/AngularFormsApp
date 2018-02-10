@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Employee } from './models/employee.model';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular Form App';
+  title: string = 'Angular Form App';
   languages: string[] = ['English', 'Spanish', 'French'];
+  model: Employee = new Employee('Frank', 'Reashore', true, "W2", "English");
 }
